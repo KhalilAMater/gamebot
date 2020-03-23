@@ -208,6 +208,21 @@ client.on('message', fkk => {
 })
 
 
+client.on('message', message => {
+  var helplist = `**:notes:  قائمة الاوامر  
+
+> --سرعه  : لعبة السرعة  
+**`
+  
+  if(message.content === prefix + 'help') {
+            message.delete(1000)
+    let e = '** جاري الارســال .. :envelope_with_arrow: **'
+	  message.reply(e).then(m => m.delete(1000))
+	  message.author.send(helplist).catch(error => message.reply('** لم اتمكن من الارسال الاوامر لك , يرجي فتح خاصك :negative_squared_cross_mark:**'))
+}
+});
+
+
 client.on('ready', () => {
    console.log(`----------------`);
       console.log(`Script By : Khalil`);
