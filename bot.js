@@ -211,7 +211,11 @@ client.on('message', fkk => {
 client.on('message', message => {
   var helplist = `**:notes:  قائمة الاوامر  
 
-> --سرعه  : لعبة السرعة  
+>  البرفكس الخاص بالبوت هو [-] 
+> الألعاب الخاصة بالبوت 
+> سرعه 
+> لغز
+> فكك 
 **`
   
   if(message.content === prefix + 'help') {
