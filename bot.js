@@ -253,8 +253,8 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : Khalil ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`Games --help`,"")
-client.user.setStatus("Online")
+client.user.setActivity(`Type ${prefix}help`,{type: 'Gaming'});
+
 });
 
 
