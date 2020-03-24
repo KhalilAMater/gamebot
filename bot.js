@@ -218,10 +218,9 @@ client.on('message', kut => {
         ];
 
 
-        var x3 = Math.floor(Math.random()*x.length)
-        kut.channel.send(`السؤال هو:  __**${x[x3]}**__
-لديك 20 ثانية للاجابة`).then(msg1=> {
-           
+       var x3 = Math.floor(Math.random()*x.length)
+        kut.channel.send(`السؤال هو:  __**${x[x3]}**`).then(msg1=> {
+
         })
     }
 })
@@ -235,6 +234,7 @@ client.on('message', message => {
 > سرعه 
 > لغز
 > فكك 
+> كت 
 **`
   
   if(message.content === prefix + 'help') {
@@ -253,7 +253,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : Khalil ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setActivity(`Type ${prefix}help`,{type: 'Gaming'});
+client.user.setActivity(`Type ${prefix}help`,{type: 'Playing'});
 
 });
 
